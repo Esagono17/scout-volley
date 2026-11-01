@@ -44,6 +44,14 @@
     .special-actions{margin-top:10px}
     @media(min-width:700px){.skill-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
+
+    /* Layout robusto anche in modalità web app iOS */
+    #startingSlots .setup-slot{display:grid!important;grid-template-columns:minmax(0,1fr)!important;align-content:center;gap:5px;min-width:0!important;width:100%;max-width:100%;overflow:hidden}
+    #startingSlots .setup-slot strong{display:block!important;white-space:normal!important;line-height:1.2}
+    #startingSlots .setup-slot select{display:block!important;grid-column:1!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box;font-size:14px!important}
+    #court.court{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box}
+    #court .slot{display:flex!important;flex-direction:column!important;align-items:center;justify-content:center;min-width:0!important;width:100%;max-width:100%;box-sizing:border-box;overflow:hidden;overflow-wrap:anywhere}
+    #court .slot small{display:block;width:100%;max-width:100%;white-space:normal;overflow-wrap:anywhere;word-break:break-word;line-height:1.15}
     /* Correzione mobile Safari: impedisce che griglie e controlli allarghino la pagina */
     @media(max-width:600px){
       html,body{width:100%;max-width:100%;overflow-x:hidden}
